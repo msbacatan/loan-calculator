@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Welcome to my page {% endblock %}
+
+{% block body %} 
+
+<h1>Simple Loan Calculator</h1>
+<hr>
+
+<form method="POST" action="/mthlyPmt">
+    <label for="loanAmt">Loan Amount:</label><br>
+    <input type="text" id="loanAmt" name="loanAmt"><br>
+<br>
+    <label for="lengthOfLoan">Length of Loan:</label><br>
+    <input type="text" id="lengthOfLoan" name="lengthOfLoan">
+</form>
+
+{% endblock %}
